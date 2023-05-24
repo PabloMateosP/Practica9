@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.Scanner;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import org.w3c.dom.Document;
@@ -37,10 +38,10 @@ public class DatabaseToXML {
                 Statement stmt = conn.createStatement();
                 ResultSet rs = stmt.executeQuery("SELECT * FROM alumnos");
 
-            // Paso 3: Crear un documento XML
-            DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
-            DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
-            Document doc = docBuilder.newDocument();
+                // Paso 3: Crear un documento XML
+                DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
+                DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
+                Document doc = docBuilder.newDocument();
 
                 // Paso 4: Rellenar el documento XML con los datos
                 Element rootElement = doc.createElement("daw1");
@@ -72,7 +73,7 @@ public class DatabaseToXML {
                 javax.xml.transform.stream.StreamResult result = new javax.xml.transform.stream.StreamResult(new java.io.File(rutaarchivo + "/" + nombrearchivo + ".xml"));
                 transformer.transform(source, result);
 
-            System.out.println("Archivo XML creado correctamente.");
+                System.out.println("Archivo XML creado correctamente.");
 
                 // Cerrar recursos
                 rs.close();
