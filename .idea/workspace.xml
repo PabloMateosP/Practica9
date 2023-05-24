@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19245742-dba5-4236-bb5b-59abdf3b9b27" name="Changes" comment="Practica 9">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/jdom2_2_0_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/jdom2_2_0_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pruebas/XMLToDatabasesinjdom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Metodos/XMLToDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Metodos/XMLToDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Metodos/DropTableDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Metodos/DropTableDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pruebas/CrearBaseDatosCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pruebas/CrearBaseDatosCSV.java" afterDir="false" />
     </list>
-    <list id="d41227f2-b45f-4bf0-a442-bd92c60f1958" name="Changes by jmmp2" comment="">
+    <list id="d41227f2-b45f-4bf0-a442-bd92c60f1958" name="Changes by jmmp2" comment="Changes by jmmp2">
       <change afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Metodos/XMLToDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Metodos/XMLToDatabase.java" afterDir="false" />
     </list>
@@ -25,17 +25,6 @@
         <option value="Class" />
       </list>
     </option>
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/Metodos/XMLToDatabase.java">
-      <ranges>
-        <range start1="10" end1="10" start2="10" end2="11" changelist="d41227f2-b45f-4bf0-a442-bd92c60f1958" />
-        <range start1="30" end1="31" start2="31" end2="32" changelist="19245742-dba5-4236-bb5b-59abdf3b9b27" />
-        <range start1="33" end1="34" start2="34" end2="34" changelist="19245742-dba5-4236-bb5b-59abdf3b9b27" />
-        <range start1="36" end1="37" start2="36" end2="36" changelist="19245742-dba5-4236-bb5b-59abdf3b9b27" />
-        <range start1="39" end1="41" start2="38" end2="38" changelist="19245742-dba5-4236-bb5b-59abdf3b9b27" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -121,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684861462309</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Practica 9">
+      <created>1684917968936</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684917968936</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
