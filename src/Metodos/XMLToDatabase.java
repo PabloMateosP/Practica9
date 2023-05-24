@@ -28,17 +28,13 @@ public class XMLToDatabase {
 
         if (rutaEntrar.equalsIgnoreCase("si")) {
             try {
-                // Paso 1: Leemos el archivo XML
+                //TODO: Debemos de cambiar esto a tal y como lo hemos hecho en el tema 7
                 SAXBuilder builder = new SAXBuilder();
                 Document document = builder.build(rutaFile);
-                //Habría que meter la ruta mediante la interfaz gráfica o con un scanner
                 Element rootElement = document.getRootElement();
 
-                // Paso 2: Establecer la conexión con la base de datos
                 Connection connection = DriverManager.getConnection(rutaDatabase);
 
-
-                // Paso 3: Insertar los datos en la tabla
                 String insertQuery = "INSERT INTO alumnos (nombre, intervenciones, fecha_intervencion) VALUES (?, ?, ?)";
                 PreparedStatement insertStatement = connection.prepareStatement(insertQuery);
 
