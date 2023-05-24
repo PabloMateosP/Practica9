@@ -1,4 +1,4 @@
-package Pruebas;
+package Metodos;
 import org.w3c.dom.*;
 import javax.xml.parsers.*;
 import java.io.File;
@@ -9,13 +9,11 @@ import java.sql.Date;
 import java.util.Scanner;
 
 public class XMLToDatabasesinjdom {
-    public static void main(String[] args) {
-        XMLToDatabase();
-    }
 
-    public static void XMLToDatabase() {
-        System.out.println("¿Está seguro de que desea pasar los datos de su XML a la base de datos?" +
-                "\nSi es así, escriba 'si'. Por el contrario, si no desea importar nada a la base de datos, escriba 'cancelar'.");
+    public static void XMLToDatabasesinjdom() {
+        System.out.println("Esta seguro de que desea pasar los datos de su XML a la base de datos?" +
+                "\nSi es asi, escriba 'si'. Por el contrario, si no desea importar nada a la base de datos, " +
+                "\nescriba 'cancelar'.");
 
         Scanner export0 = new Scanner(System.in);
         String rutaEntrar = export0.nextLine();

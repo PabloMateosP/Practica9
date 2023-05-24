@@ -1,3 +1,1 @@
-Para que funcione el proyecto primero tendremos que exportar el jar jdom2-2.0.5 para importar las clases necesarias
-Por otra parte deberemos de tener nuestra base de datos creada la cual también podríamos hacer un método para crearla
-con el nombre que nosotros queramos introduciendo la ruta y los datos por parámetros.
+Para el uso de la base

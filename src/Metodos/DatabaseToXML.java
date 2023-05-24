@@ -10,54 +10,79 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
 public class DatabaseToXML {
-    public static void main(String[] args) {
-        try {
-            // Paso 1: Conectarse a la base de datos
-            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/nombre_base_de_datos", "usuario", "contraseña");
+    public static void DatabaseToXML() {
+        Scanner export0 = new Scanner(System.in);
+        String rutaEntrar = export0.nextLine();
 
-            // Paso 2: Obtener los datos de la base de datos
-            Statement stmt = conn.createStatement();
-            ResultSet rs = stmt.executeQuery("SELECT * FROM nombre_tabla");
+        System.out.println("Desea exportar su Base de Datos a un archivo XML?" +
+                " \nSi es asi escriba si, por el contrario si no desea realizar esta accion escriba cancelar");
+        if (rutaEntrar.equalsIgnoreCase("si")){
+            try {
+                // Paso 1: Conectarse a la base de datos
+                System.out.println("Escriba la ruta de su base de datos:");
+                Scanner export1 = new Scanner(System.in);
+                String rutaDatabase = export1.nextLine();
+
+                System.out.println("Escriba la ruta donde se creará su archivo:");
+                Scanner export2 = new Scanner(System.in);
+                String rutaarchivo = export2.nextLine();
+
+                System.out.println("Escriba el nombre de su archivo:");
+                Scanner export3 = new Scanner(System.in);
+                String nombrearchivo = export3.nextLine();
+
+                Connection conn = DriverManager.getConnection(rutaDatabase);
+
+                // Paso 2: Obtener los datos de la base de datos
+                Statement stmt = conn.createStatement();
+                ResultSet rs = stmt.executeQuery("SELECT * FROM alumnos");
 
             // Paso 3: Crear un documento XML
             DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
             Document doc = docBuilder.newDocument();
 
-            // Paso 4: Rellenar el documento XML con los datos
-            Element rootElement = doc.createElement("datos");
-            doc.appendChild(rootElement);
-            while (rs.next()) {
-                Element elemento = doc.createElement("elemento");
-                rootElement.appendChild(elemento);
+                // Paso 4: Rellenar el documento XML con los datos
+                Element rootElement = doc.createElement("daw1");
+                doc.appendChild(rootElement);
+                while (rs.next()) {
+                    Element elemento = doc.createElement("alumno");
+                    rootElement.appendChild(elemento);
 
-                // Agregar elementos y atributos según los datos de la base de datos
-                Element campo1 = doc.createElement("campo1");
-                campo1.setTextContent(rs.getString("campo1"));
-                elemento.appendChild(campo1);
+                    // Agregar elementos y atributos según los datos de la base de datos
+                    Element campo1 = doc.createElement("nombre");
+                    campo1.setTextContent(rs.getString("nombre"));
+                    elemento.appendChild(campo1);
 
-                Element campo2 = doc.createElement("campo2");
-                campo2.setTextContent(rs.getString("campo2"));
-                elemento.appendChild(campo2);
+                    Element campo2 = doc.createElement("intervenciones");
+                    campo2.setTextContent(rs.getString("intervenciones"));
+                    elemento.appendChild(campo2);
 
-                // Agregar más elementos y atributos según sea necesario
-            }
+                    Element campo3 = doc.createElement("fecha");
+                    campo3.setTextContent(rs.getString("fecha_intervencion"));
+                    elemento.appendChild(campo3);
 
-            // Paso 5: Guardar el documento XML en un archivo
-            javax.xml.transform.TransformerFactory transformerFactory = javax.xml.transform.TransformerFactory.newInstance();
-            javax.xml.transform.Transformer transformer = transformerFactory.newTransformer();
-            javax.xml.transform.dom.DOMSource source = new javax.xml.transform.dom.DOMSource(doc);
-            javax.xml.transform.stream.StreamResult result = new javax.xml.transform.stream.StreamResult(new java.io.File("ruta/archivo.xml"));
-            transformer.transform(source, result);
+                    // Agregar más elementos y atributos según sea necesario
+                }
+
+                // Paso 5: Guardar el documento XML en un archivo
+                javax.xml.transform.TransformerFactory transformerFactory = javax.xml.transform.TransformerFactory.newInstance();
+                javax.xml.transform.Transformer transformer = transformerFactory.newTransformer();
+                javax.xml.transform.dom.DOMSource source = new javax.xml.transform.dom.DOMSource(doc);
+                javax.xml.transform.stream.StreamResult result = new javax.xml.transform.stream.StreamResult(new java.io.File(rutaarchivo + "/" + nombrearchivo + ".xml"));
+                transformer.transform(source, result);
 
             System.out.println("Archivo XML creado correctamente.");
 
-            // Cerrar recursos
-            rs.close();
-            stmt.close();
-            conn.close();
-        } catch (Exception e) {
-            e.printStackTrace();
+                // Cerrar recursos
+                rs.close();
+                stmt.close();
+                conn.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        } else if (rutaEntrar.equalsIgnoreCase("cancelar")) {
+            System.out.println("La base de datos no ha sido modificada.");
         }
     }
 }

@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class DropTableDatabase {
     public static void DropTableDatabase() {
 
-        System.out.println("Esta seguro que desea borrar una nueva tabla en la Base de Datos ?" +
+        System.out.println("Esta seguro que desea borrar una tabla en la Base de Datos ?" +
                 " \nSi es asi escriba si, por el contrario si no desea crear ninguna tabla " +
                 "\na la Base de Datos escriba cancelar");
         Scanner scanner = new Scanner(System.in);

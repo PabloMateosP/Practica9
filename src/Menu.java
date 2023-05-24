@@ -1,9 +1,6 @@
 import Metodos.*;
-import org.xml.sax.SAXException;
+import Metodos.RandomAlumnoUpdater;
 
-import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.transform.TransformerException;
-import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -47,8 +44,8 @@ public class Menu {
                         DropTableDatabase.DropTableDatabase();
                         break;
                     case 5:
-                        System.out.println("Has seleccionado opción 5" );
-                        XMLToDatabase.XMLToDatabase();
+                        System.out.println("Has seleccionado opcion 5" );
+                        XMLToDatabasesinjdom.XMLToDatabasesinjdom();
                         break;
                     case 6:
                         System.out.println("Has seleccionado opción 5" );

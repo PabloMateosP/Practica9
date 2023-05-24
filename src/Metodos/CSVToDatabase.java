@@ -7,15 +7,15 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 
 public class CSVToDatabase {
-    public static void main(String[] args) {
-        String csvFile = "ruta_al_archivo.csv";
-        String databaseUrl = "jdbc:mysql://localhost:3306/nombre_base_de_datos";
+    public static void CSVToDatabase() {
+        String csvFile = "src/participaciones_20230518 - participaciones_20230518.csv";
+        String databaseUrl = "jdbc:mariadb://localhost:3306/intervenciones";
 
         try (Connection connection = DriverManager.getConnection(databaseUrl);
              BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
 
             String line;
-            String insertQuery = "INSERT INTO tabla (col1, col2, col3) VALUES (?, ?, ?)";
+            String insertQuery = "INSERT INTO alumnos (nombre, intervenciones, fecha_intervencion) VALUES (?, ?, ?)";
             PreparedStatement insertStatement = connection.prepareStatement(insertQuery);
 
             br.readLine();
@@ -23,13 +23,13 @@ public class CSVToDatabase {
             while ((line = br.readLine()) != null) {
                 String[] data = line.split(",");
 
-                String col1 = data[0];
-                String col2 = data[1];
-                String col3 = data[2];
+                String nombre = data[0];
+                String intervenciones = data[1];
+                String fecha_intervencion = data[2];
 
-                insertStatement.setString(1, col1);
-                insertStatement.setString(2, col2);
-                insertStatement.setString(3, col3);
+                insertStatement.setString(1, nombre);
+                insertStatement.setString(2, intervenciones);
+                insertStatement.setString(3, fecha_intervencion);
                 insertStatement.executeUpdate();
             }
 
