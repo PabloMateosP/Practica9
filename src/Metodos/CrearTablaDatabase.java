@@ -42,8 +42,5 @@ public class CrearTablaDatabase {
 
     }
 
-    public static void main(String[] args) {
-        CrearTablaDatabase();
-    }
 }
 

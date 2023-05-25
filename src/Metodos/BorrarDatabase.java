@@ -38,7 +38,4 @@ public class BorrarDatabase {
 
     }
 
-    public static void main(String[] args) {
-        BorrarDatabase();
-    }
 }

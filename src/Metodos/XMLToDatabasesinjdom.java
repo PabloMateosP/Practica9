@@ -63,6 +63,8 @@ public class XMLToDatabasesinjdom {
                 insertStatement.close();
                 connection.close();
 
+                System.out.println(" ");
+
                 System.out.println("Datos insertados correctamente en la base de datos.");
             } catch (Exception e) {
                 e.printStackTrace();

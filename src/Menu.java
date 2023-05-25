@@ -26,12 +26,11 @@ public class Menu {
             System.out.println("11. Salir");
 
 
-
-
             try {
 
                 System.out.println("Escriba una de las opciones");
                 opcion = sn.nextInt();
+
 
                 switch(opcion) {
                     case 1:
@@ -64,7 +63,7 @@ public class Menu {
                         break;
                     case 8:
                         System.out.println("Has seleccionado opcion 8" );
-                        // TODO: Insertar Método DATABASETOCSV
+                        DatabaseToCSV.exportDataToCSV();
                         break;
                     case 9:
                         System.out.println("Has seleccionado opcion 9" );
