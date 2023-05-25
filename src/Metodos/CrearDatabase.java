@@ -9,8 +9,6 @@ import java.util.Scanner;
 public class CrearDatabase {
     public static void CrearDatabase() {
 
-
-
         Scanner scanner = new Scanner(System.in);
         String scannertexto = scanner.nextLine();
 

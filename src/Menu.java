@@ -1,5 +1,8 @@
 import Metodos.*;
 import Metodos.RandomAlumnoUpdater;
+import Metodos.EliminarAlumno;
+import Metodos.IntroducirAlumno;
+import Metodos.ModificarAlumno;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -23,7 +26,10 @@ public class Menu {
             System.out.println("8. Exportar de Base de Datos a CSV");
             System.out.println("9. Seleccionar Alumno Aleatorio");
             System.out.println("10. Poner a 0 todas las intervenciones");
-            System.out.println("11. Salir");
+            System.out.println("11. Introducir un alumno");
+            System.out.println("12. Eliminar un alumno");
+            System.out.println("13. Actualizar un alumno");
+            System.out.println("14. Salir");
 
 
             try {
@@ -70,18 +76,31 @@ public class Menu {
                         RandomAlumnoUpdater.seleccionarAlumnoAleatorioActualizarFecha();
                         break;
                     case 10:
-                        System.out.println("Has seleccionado opción 10" );
+                        System.out.println("Has seleccionado opcion 10" );
                         ResetearIntervenciones.resetearIntervenciones();
                         break;
                     case 11:
+                        System.out.println("Has seleccionado opcion 11" );
+                        IntroducirAlumno.IntroducirAlumno();
+                        break;
+                    case 12:
+                        System.out.println("Has seleccionado opcion 12" );
+                        EliminarAlumno.eliminarAlumno();
+                        break;
+                    case 13:
+                        System.out.println("Has seleccionado opcion 13" );
+                        ModificarAlumno.IntroducirAlumno();
+                        break;
+
+                    case 14:
                         salir = true;
                         break;
                     default:
                         //TODO: REAJUSTAR NÚMEROS
-                        System.out.println("Solo números entre 1 y 11");
+                        System.out.println("Solo numeros entre 1 y 13");
                 }
             } catch (InputMismatchException e) {
-                System.out.println("Debe insertar un número");
+                System.out.println("Debe insertar un numero");
                 sn.next();
             }
         }

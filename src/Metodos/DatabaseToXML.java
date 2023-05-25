@@ -34,23 +34,23 @@ public class DatabaseToXML {
 
                 Connection conn = DriverManager.getConnection(rutaDatabase);
 
-                // Paso 2: Obtener los datos de la base de datos
+                // Obtenemos los datos de la base de datos
                 Statement stmt = conn.createStatement();
                 ResultSet rs = stmt.executeQuery("SELECT * FROM alumnos");
 
-                // Paso 3: Crear un documento XML
+                // Creamos un documento XML
                 DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
                 DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
                 Document doc = docBuilder.newDocument();
 
-                // Paso 4: Rellenar el documento XML con los datos
+                // Rellenamos el documento XML con los datos
                 Element rootElement = doc.createElement("daw1");
                 doc.appendChild(rootElement);
                 while (rs.next()) {
                     Element elemento = doc.createElement("alumno");
                     rootElement.appendChild(elemento);
 
-                    // Agregar elementos y atributos según los datos de la base de datos
+                    // Agregamos elementos y atributos según los datos de la base de datos
                     Element campo1 = doc.createElement("nombre");
                     campo1.setTextContent(rs.getString("nombre"));
                     elemento.appendChild(campo1);
@@ -63,10 +63,9 @@ public class DatabaseToXML {
                     campo3.setTextContent(rs.getString("fecha_intervencion"));
                     elemento.appendChild(campo3);
 
-                    // Agregar más elementos y atributos según sea necesario
                 }
 
-                // Paso 5: Guardar el documento XML en un archivo
+                // Guardamos el documento XML en un archivo
                 javax.xml.transform.TransformerFactory transformerFactory = javax.xml.transform.TransformerFactory.newInstance();
                 javax.xml.transform.Transformer transformer = transformerFactory.newTransformer();
                 javax.xml.transform.dom.DOMSource source = new javax.xml.transform.dom.DOMSource(doc);
