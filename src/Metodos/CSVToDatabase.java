@@ -5,14 +5,20 @@ import java.io.FileReader;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.util.Scanner;
 
 public class CSVToDatabase {
     public static void CSVToDatabase() {
-        String csvFile = "src/participaciones_20230518 - participaciones_20230518.csv";
-        String databaseUrl = "jdbc:mariadb://localhost:3306/intervenciones";
+        System.out.println("Escriba la ruta de su base de datos:");
+        Scanner export1 = new Scanner(System.in);
+        String rutaDatabase = export1.nextLine();
 
-        try (Connection connection = DriverManager.getConnection(databaseUrl);
-             BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
+        System.out.println("Escriba la ruta del archivo:");
+        Scanner export2 = new Scanner(System.in);
+        String nombreTabla = export1.nextLine();
+
+        try (Connection connection = DriverManager.getConnection(rutaDatabase);
+             BufferedReader br = new BufferedReader(new FileReader(nombreTabla))) {
 
             String line;
             String insertQuery = "INSERT INTO alumnos (nombre, intervenciones, fecha_intervencion) VALUES (?, ?, ?)";

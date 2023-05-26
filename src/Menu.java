@@ -20,8 +20,8 @@ public class Menu {
             System.out.println("2. Borrar Base de Datos");
             System.out.println("3. Crear Tabla");
             System.out.println("4. Borrar Tabla");
-            System.out.println("5. Exportar de XML a una Base de Datos");
-            System.out.println("6. Exportar de CSV a una Base de Datos");
+            System.out.println("5. Importar de XML a una Base de Datos");
+            System.out.println("6. Importar de CSV a una Base de Datos");
             System.out.println("7. Exportar de Base de Datos a XML");
             System.out.println("8. Exportar de Base de Datos a CSV");
             System.out.println("9. Seleccionar Alumno Aleatorio");

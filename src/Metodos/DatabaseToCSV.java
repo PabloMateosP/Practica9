@@ -53,6 +53,7 @@ public class DatabaseToCSV {
                     fileWriter.append("\n");
                 }
             }
+            fileWriter.close();
             System.out.println("Datos exportados exitosamente a CSV.");
         } catch (SQLException sqlException) {
             sqlException.printStackTrace();

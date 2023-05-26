@@ -4,26 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19245742-dba5-4236-bb5b-59abdf3b9b27" name="Changes" comment="Practica 9 subida de nuevo">
-      <change afterPath="$PROJECT_DIR$/src/Metodos/EliminarAlumno.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Metodos/IntroducirAlumno.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Metodos/MenosMediaParticipaciones.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Metodos/ModificarAlumno.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pruebas/DatabaseToCSV.java" afterDir="false" />
+    <list default="true" id="19245742-dba5-4236-bb5b-59abdf3b9b27" name="Changes" comment="Practica 9 subida README">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Metodos/BorrarDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Metodos/BorrarDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Metodos/CrearTablaDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Metodos/CrearTablaDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Metodos/XMLToDatabasesinjdom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Metodos/XMLToDatabasesinjdom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Metodos_NoUsado/XMLToDatabase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pruebas/IntervencionesAlum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pruebas/IntervencionesAlum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pruebas/MenosMediaParticipaciones.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Metodos/CSVToDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Metodos/CSVToDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Metodos/DatabaseToCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Metodos/DatabaseToCSV.java" afterDir="false" />
     </list>
-    <list id="d41227f2-b45f-4bf0-a442-bd92c60f1958" name="Changes by jmmp2" comment="Changes by jmmp2">
-      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Metodos/CrearDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Metodos/CrearDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Metodos/DatabaseToXML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Metodos/DatabaseToXML.java" afterDir="false" />
-    </list>
+    <list id="d41227f2-b45f-4bf0-a442-bd92c60f1958" name="Changes by jmmp2" comment="Changes by jmmp2" />
     <list id="6612e427-bffa-4c6a-a980-9042639c8957" name="Changes by Wanmilla Salvaje" comment="">
       <change beforePath="$PROJECT_DIR$/src/Pruebas/IntervencionesAlum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pruebas/IntervencionesAlum.java" afterDir="false" />
     </list>
@@ -39,34 +26,6 @@
       </list>
     </option>
   </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/Pruebas/IntervencionesAlum.java">
-      <ranges>
-        <range start1="8" end1="34" start2="8" end2="8" changelist="19245742-dba5-4236-bb5b-59abdf3b9b27" />
-        <range start1="35" end1="38" start2="9" end2="33" changelist="6612e427-bffa-4c6a-a980-9042639c8957" />
-        <range start1="39" end1="44" start2="34" end2="34" changelist="19245742-dba5-4236-bb5b-59abdf3b9b27" />
-        <range start1="45" end1="46" start2="35" end2="36" changelist="19245742-dba5-4236-bb5b-59abdf3b9b27" />
-        <range start1="52" end1="53" start2="42" end2="43" changelist="19245742-dba5-4236-bb5b-59abdf3b9b27" />
-        <range start1="57" end1="60" start2="47" end2="48" changelist="19245742-dba5-4236-bb5b-59abdf3b9b27" />
-        <range start1="61" end1="70" start2="49" end2="58" changelist="19245742-dba5-4236-bb5b-59abdf3b9b27" />
-        <range start1="74" end1="75" start2="62" end2="62" changelist="19245742-dba5-4236-bb5b-59abdf3b9b27" />
-        <range start1="76" end1="77" start2="63" end2="64" changelist="19245742-dba5-4236-bb5b-59abdf3b9b27" />
-        <range start1="88" end1="89" start2="75" end2="76" changelist="19245742-dba5-4236-bb5b-59abdf3b9b27" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/Menu.java">
-      <ranges>
-        <range start1="2" end1="2" start2="2" end2="5" changelist="d41227f2-b45f-4bf0-a442-bd92c60f1958" />
-        <range start1="25" end1="26" start2="28" end2="32" changelist="d41227f2-b45f-4bf0-a442-bd92c60f1958" />
-        <range start1="28" end1="30" start2="34" end2="34" changelist="19245742-dba5-4236-bb5b-59abdf3b9b27" />
-        <range start1="35" end1="35" start2="39" end2="40" changelist="19245742-dba5-4236-bb5b-59abdf3b9b27" />
-        <range start1="73" end1="74" start2="78" end2="79" changelist="d41227f2-b45f-4bf0-a442-bd92c60f1958" />
-        <range start1="77" end1="77" start2="82" end2="94" changelist="d41227f2-b45f-4bf0-a442-bd92c60f1958" />
-        <range start1="81" end1="82" start2="98" end2="99" changelist="d41227f2-b45f-4bf0-a442-bd92c60f1958" />
-        <range start1="84" end1="85" start2="101" end2="102" changelist="d41227f2-b45f-4bf0-a442-bd92c60f1958" />
-      </ranges>
-    </file>
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -79,19 +38,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/pablo/OneDrive/Escritorio/App Prog/jdom2-2.0.5.jar/jdom2-2.0.5.jar",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/pablo/OneDrive/Escritorio/App Prog/jdom2-2.0.5.jar/jdom2-2.0.5.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\pablo\Desktop\Practica9\src" />
@@ -239,7 +198,28 @@
       <option name="project" value="LOCAL" />
       <updated>1684950409278</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Practica 9 subida finalizacion metodos">
+      <created>1685037854006</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1685037854006</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Changes by jmmp2">
+      <created>1685037874564</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1685037874564</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Practica 9 subida README">
+      <created>1685089965728</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1685089965728</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -257,7 +237,35 @@
     <MESSAGE value="Practica 9 README" />
     <MESSAGE value="Practica 9" />
     <MESSAGE value="Practica 9 subida de nuevo" />
+    <MESSAGE value="Practica 9 subida finalizacion metodos" />
     <MESSAGE value="Changes by jmmp2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes by jmmp2" />
+    <MESSAGE value="Practica 9 subida README" />
+    <option name="LAST_COMMIT_MESSAGE" value="Practica 9 subida README" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Metodos/DatabaseToCSV.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Metodos/DatabaseToCSV.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Metodos/DatabaseToCSV.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Metodos/DatabaseToCSV.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -48,11 +48,15 @@ public class ModificarAlumno {
                 //SET column1 = value1, column2 = value2, ...
                 //WHERE condition;
 
-                String sql2 = "UPDATE alumnos SET (intervenciones = ?) WHERE nombre =" + nombre;
+
+                String sql2 = "UPDATE alumnos SET intervenciones = ? WHERE nombre = ?";
                 PreparedStatement pstmt2 = connection.prepareStatement(sql2);
-                pstmt2.setInt(2, Integer.parseInt(intervenciones));
+                pstmt2.setString(1, intervenciones);
+                pstmt2.setString(2, nombre);
                 pstmt2.executeUpdate();
                 pstmt2.close();
+
+
 
             }
 
