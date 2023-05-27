@@ -8,6 +8,8 @@ import java.util.Scanner;
 
 public class CrearDatabase {
     public static void CrearDatabase() {
+        System.out.println("Esta seguro que desea crear una Base de Datos ?" +
+                " \nSi es asi escriba 'si', por el contrario si no desea crear ninguna Base de Datos escriba 'cancelar'");
 
         Scanner scanner = new Scanner(System.in);
         String scannertexto = scanner.nextLine();
@@ -28,7 +30,7 @@ public class CrearDatabase {
                  Statement stmt = conn.createStatement()) {
                 String sql = "CREATE OR REPLACE DATABASE " + nombreBase;
                 stmt.executeUpdate(sql);
-                System.out.println("Base de datos creada con éxito!!");
+                System.out.println("Base de datos creada con exito!!");
             } catch (SQLException e) {
                 e.printStackTrace();
             }

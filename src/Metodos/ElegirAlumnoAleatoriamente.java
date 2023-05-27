@@ -33,7 +33,7 @@ public class ElegirAlumnoAleatoriamente {
                 System.out.println("Le ha sido sumada una intervencion ");
             } else if (respuesta.equalsIgnoreCase("No")) {
                 nuevasIntervenciones--;
-                System.out.println("Le ha sido rectada una intervencion");
+                System.out.println("Le ha sido restada una intervencion");
             } else {
                 System.out.println("No se realizaron cambios en las intervenciones.");
                 return;

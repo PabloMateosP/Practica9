@@ -12,11 +12,12 @@ import org.w3c.dom.Element;
 
 public class DatabaseToXML {
     public static void DatabaseToXML() {
+        System.out.println("Desea exportar su Base de Datos a un archivo XML?" +
+                " \nSi es asi escriba si, por el contrario si no desea realizar esta accion escriba cancelar");
         Scanner export0 = new Scanner(System.in);
         String rutaEntrar = export0.nextLine();
 
-        System.out.println("Desea exportar su Base de Datos a un archivo XML?" +
-                " \nSi es asi escriba si, por el contrario si no desea realizar esta accion escriba cancelar");
+
         if (rutaEntrar.equalsIgnoreCase("si")){
             try {
                 // Paso 1: Conectarse a la base de datos
@@ -24,7 +25,7 @@ public class DatabaseToXML {
                 Scanner export1 = new Scanner(System.in);
                 String rutaDatabase = export1.nextLine();
 
-                System.out.println("Escriba la ruta donde se creará su archivo:");
+                System.out.println("Escriba la ruta donde se creara su archivo:");
                 Scanner export2 = new Scanner(System.in);
                 String rutaarchivo = export2.nextLine();
 

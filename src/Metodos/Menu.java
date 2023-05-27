@@ -101,8 +101,7 @@ public class Menu {
                         salir = true;
                         break;
                     default:
-                        //TODO: REAJUSTAR NÚMEROS
-                        System.out.println("Solo numeros entre 1 y 13");
+                        System.out.println("Solo numeros entre 1 y 15");
                 }
             } catch (InputMismatchException e) {
                 System.out.println("Debe insertar un numero");
