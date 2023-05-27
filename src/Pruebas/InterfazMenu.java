@@ -27,8 +27,8 @@ public class InterfazMenu {
         menu.add(item1);
         barraMenu.add(menu);
         ventaPrincipal.setMenuBar(barraMenu);
-        ventaPrincipal.setSize(800, 800);
-        ventaPrincipal.setLayout(null);
+        ventaPrincipal.setSize(400, 300);
+        ventaPrincipal.setLayout(new GridLayout(3,2,10,10));
         ventaPrincipal.setVisible(true);
         ventaPrincipal.setBackground(new Color(0xBABA96));
 
@@ -40,26 +40,26 @@ public class InterfazMenu {
         textoBienvenida.setForeground(new Color(000000));
         ventaPrincipal.add(textoBienvenida);
 
-        //Creamos label para barra estética
-        Label textoART = new Label("|------------------------------------------------------------------------------------------------|");
-        textoART.setVisible(true);
-        textoART.setBounds(142, 75, 400, 10);
-        textoART.setBackground(new Color(0xBABA96));
-        textoART.setForeground(new Color(000000));
-        ventaPrincipal.add(textoART);
+        Label textoAclaracion = new Label("");
+        textoBienvenida.setVisible(true);
+        textoBienvenida.setBounds(150, 50, 400, 25);
+        textoBienvenida.setBackground(new Color(0xBABA96));
+        textoBienvenida.setForeground(new Color(000000));
+        ventaPrincipal.add(textoBienvenida);
+
 
         //Botón borrar Base de datos
         Button botonBorraBase = new Button("Borrar Base");
-        botonBorraBase.setBounds(50, 110, 100, 50);
+        botonBorraBase.setBounds(250, 110, 100, 50);
         botonBorraBase.setVisible(true);
         botonBorraBase.setForeground(Color.BLACK);
         ventaPrincipal.add(botonBorraBase);
 
-        //Frame borrarBase
+        //FRAME PARA BORRAR LA BASE DE DATOS
         Frame frameBorrarBase = new Frame("Borrar Base");
-        frameBorrarBase.setSize(400, 400);
-        frameBorrarBase.setLayout(null);
-        Label labeltextoRutaBase = new Label("Escriba la ruta de su archivo:");
+        frameBorrarBase.setSize(200, 200);
+        frameBorrarBase.setLayout(new GridLayout(3,3,10,10));
+        Label labeltextoRutaBase = new Label("Escriba la ruta de su Base:");
         labeltextoRutaBase.setBounds(10, 20, 160, 100);
         labeltextoRutaBase.setForeground(Color.BLACK);
         frameBorrarBase.add(labeltextoRutaBase);
@@ -80,12 +80,6 @@ public class InterfazMenu {
         textoNombreBase.setBounds(190, 140, 100, 20);
         frameBorrarBase.add(textoNombreBase);
 
-        Button aceptar = new Button("Aceptar");
-        aceptar.setBounds(150, 300, 50, 50);
-        frameBorrarBase.add(aceptar);
-
-
-
         botonBorraBase.addActionListener(new ActionListener() {
 
             public void actionPerformed(ActionEvent e) {
@@ -95,17 +89,23 @@ public class InterfazMenu {
                 textoNombreBase.setVisible(true);
                 labeltextoRutaBase.setVisible(true);
                 labeltextoRutaBase.setVisible(true);
-                aceptar.setVisible(true);
 
+                Button aceptar1 = new Button("Aceptar");
+                aceptar1.setBounds(150, 300, 50, 50);
+                frameBorrarBase.add(aceptar1);
+                aceptar1.setVisible(true);
+
+                //PARA QUE ESTE LISTENER SE ACTIVE DEBEMOS DE PULSAR ENTER DESPUÉS DE
+                //INTRODUCIR EL TEXTO
                 textoNombreBase.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         String rutaBase = textoBorrarBase.getText();
                         String nombreBase = textoNombreBase.getText();
-                        aceptar.addActionListener(new ActionListener() {
+                        aceptar1.addActionListener(new ActionListener() {
                             @Override
                             public void actionPerformed(ActionEvent e) {
-                                CrearDatabaseINTERFAZ.CrearDatabase(rutaBase, nombreBase);
+                                BorrarDatabaseINTERFAZ.BorrarDatabase(rutaBase, nombreBase);
                             }
                         });
                     }
@@ -122,12 +122,98 @@ public class InterfazMenu {
         });
         //Cerrar frame borrar base mediante cruz roja
 
+
+        //FRAME PARA CREAR LA BASE DE DATOS
+        Frame frameCreaBase = new Frame("Crear Base");
+        frameCreaBase.setSize(200, 200);
+        frameCreaBase.setLayout(new GridLayout(3,3,10,10));
+        Label labeltexto2RutaBase = new Label("Escriba la ruta de su base:");
+        labeltexto2RutaBase.setBounds(10, 20, 160, 100);
+        labeltexto2RutaBase.setForeground(Color.BLACK);
+        frameCreaBase.add(labeltexto2RutaBase);
+
+        Label labeltexto2NombreBase = new Label("Escriba el nombre de su base:");
+        labeltexto2NombreBase.setBounds(10, 100, 170, 100);
+        labeltexto2NombreBase.setForeground(Color.BLACK);
+        frameCreaBase.add(labeltexto2NombreBase);
+
+        TextField texto2CrearBase = new TextField();
+        texto2CrearBase.setBounds(175, 60, 100, 20);
+        frameCreaBase.add(texto2CrearBase);
+
+        TextField texto2NombreBase = new TextField();
+        texto2NombreBase.setBounds(190, 140, 100, 20);
+        frameCreaBase.add(texto2NombreBase);
+
+        Button botonCreaBase = new Button("Crear Base");
+        botonCreaBase.setBounds(350, 110, 100, 50);
+        botonCreaBase.setVisible(true);
+        botonCreaBase.setForeground(Color.BLACK);
+        ventaPrincipal.add(botonCreaBase);
+        botonCreaBase.addActionListener(new ActionListener() {
+
+            public void actionPerformed(ActionEvent e) {
+                frameCreaBase.setVisible(true);
+                labeltexto2NombreBase.setVisible(true);
+                texto2CrearBase.setVisible(true);
+                texto2NombreBase.setVisible(true);
+                labeltexto2RutaBase.setVisible(true);
+                labeltexto2RutaBase.setVisible(true);
+
+                Button aceptar2 = new Button("Aceptar");
+                aceptar2.setBounds(150, 300, 50, 50);
+                frameCreaBase.add(aceptar2);
+                aceptar2.setVisible(true);
+
+                texto2NombreBase.addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        String rutaBase = texto2CrearBase.getText();
+                        String nombreBase = texto2NombreBase.getText();
+                        //SI FUNCIONA
+                        aceptar2.addActionListener(new ActionListener() {
+                            @Override
+                            public void actionPerformed(ActionEvent e) {
+                                CrearDatabaseINTERFAZ.CrearDatabase(rutaBase, nombreBase);
+                            }
+                        });
+                    }
+
+                });
+
+                frameCreaBase.addWindowListener(new WindowAdapter() {
+                    @Override
+                    public void windowClosing(WindowEvent e) {
+                        frameCreaBase.dispose();
+                    }
+                });
+            }
+        });
         ventaPrincipal.addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent e) {
                 ventaPrincipal.dispose();
             }
         });
+
+        MenuBar menuBar = new MenuBar();
+        Menu opcionesMenu = new Menu("Opciones");
+        MenuItem salirItem = new MenuItem("Salir");
+        Menu opcionAyuda = new Menu("Ayuda");
+
+        // Agregar los items al menú
+        opcionesMenu.add(salirItem);
+        menuBar.add(opcionAyuda);
+        menuBar.add(opcionesMenu);
+
+        ventaPrincipal.setMenuBar(menuBar);
+
+        salirItem.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                System.exit(0);
+            }
+        });
+
 
     }
 }

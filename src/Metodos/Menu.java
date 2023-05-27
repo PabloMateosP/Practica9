@@ -1,3 +1,5 @@
+package Metodos;
+
 import Metodos.*;
 import Metodos.ElegirAlumnoAleatoriamente;
 import Metodos.EliminarAlumno;
@@ -29,7 +31,8 @@ public class Menu {
             System.out.println("11. Introducir un alumno");
             System.out.println("12. Eliminar un alumno");
             System.out.println("13. Actualizar un alumno");
-            System.out.println("14. Salir");
+            System.out.println("14. Mostrar alumnos con menor intervencion de la media");
+            System.out.println("15. Salir");
 
 
             try {
@@ -91,8 +94,10 @@ public class Menu {
                         System.out.println("Has seleccionado opcion 13" );
                         ModificarAlumno.IntroducirAlumno();
                         break;
-
                     case 14:
+                        System.out.println("Has seleccionado opcion 14");
+                        MenosMediaParticipaciones.seleccionarAlumnosConMenosDeMedia();
+                    case 15:
                         salir = true;
                         break;
                     default:
