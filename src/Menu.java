@@ -1,5 +1,5 @@
 import Metodos.*;
-import Metodos.RandomAlumnoUpdater;
+import Metodos.ElegirAlumnoAleatoriamente;
 import Metodos.EliminarAlumno;
 import Metodos.IntroducirAlumno;
 import Metodos.ModificarAlumno;
@@ -73,7 +73,7 @@ public class Menu {
                         break;
                     case 9:
                         System.out.println("Has seleccionado opcion 9" );
-                        RandomAlumnoUpdater.seleccionarAlumnoAleatorioActualizarFecha();
+                        ElegirAlumnoAleatoriamente.seleccionarAlumnoAleatorioActualizarFecha();
                         break;
                     case 10:
                         System.out.println("Has seleccionado opcion 10" );

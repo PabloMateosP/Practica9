@@ -35,10 +35,5 @@ public class CrearDatabase {
         } else if (scannertexto.equalsIgnoreCase("cancelar")) {
             System.out.println("No se ha creado ninguna base de datos");
         }
-
-    }
-
-    public static void main(String[] args) {
-        CrearDatabase();
     }
 }

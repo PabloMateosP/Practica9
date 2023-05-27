@@ -56,8 +56,6 @@ public class ModificarAlumno {
                 pstmt2.executeUpdate();
                 pstmt2.close();
 
-
-
             }
 
             System.out.println("Alumno actualizado con exito a la base de datos.");

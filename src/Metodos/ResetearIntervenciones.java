@@ -4,9 +4,6 @@ import java.sql.*;
 import java.util.Scanner;
 
 public class ResetearIntervenciones {
-    public static void main(String[] args) {
-        resetearIntervenciones();
-    }
 
     public static void resetearIntervenciones(){
         String query = "UPDATE alumnos SET intervenciones = 0";

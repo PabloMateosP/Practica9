@@ -1,9 +1,8 @@
 package Metodos;
-import javax.imageio.stream.ImageInputStreamImpl;
 import java.sql.*;
 import java.util.*;
 
-public class RandomAlumnoUpdater {
+public class ElegirAlumnoAleatoriamente {
 
     public static void seleccionarAlumnoAleatorioActualizarFecha(){
         try {
@@ -22,7 +21,6 @@ public class RandomAlumnoUpdater {
             mostrarInformacionAlumno(connection, alumnoSeleccionado);
             System.out.println("Fecha de intervencion actualizada correctamente.");
 
-            //TODO: SE BUSCA AÑADIR, QUITAR O DEJAR IGUAL LAS INTERVENCIONES DEL ALUMNO
             Scanner scanner = new Scanner(System.in);
             System.out.println("La intervencion fue correcta? (Si/No)");
             String respuesta = scanner.nextLine();
@@ -41,7 +39,6 @@ public class RandomAlumnoUpdater {
                 return;
             }
 
-            // Actualizar la cantidad de intervenciones en la base de datos
             actualizarIntervencionesAlumno(connection, alumnoSeleccionado, nuevasIntervenciones);
 
         } catch (SQLException aq){
@@ -86,7 +83,7 @@ public class RandomAlumnoUpdater {
             sq.printStackTrace();
         }
     }
-    private static int obtenerIntervencionesAlumno(Connection connection, String alumno) throws SQLException {
+    private static int obtenerIntervencionesAlumno(Connection connection, String alumno){
         String query = "SELECT intervenciones FROM alumnos WHERE nombre = ?";
         try (PreparedStatement statement = connection.prepareStatement(query)) {
             statement.setString(1, alumno);
@@ -94,20 +91,24 @@ public class RandomAlumnoUpdater {
             if (resultSet.next()) {
                 return resultSet.getInt("intervenciones");
             }
+        } catch(SQLException sq) {
+            sq.printStackTrace();
         }
         return 0;
     }
 
     // Actualizar la cantidad de intervenciones de un alumno en la base de datos
-    private static void actualizarIntervencionesAlumno(Connection connection, String alumno, int nuevasIntervenciones) throws SQLException {
+    private static void actualizarIntervencionesAlumno(Connection connection, String alumno, int nuevasIntervenciones) {
         String query = "UPDATE alumnos SET intervenciones = ? WHERE nombre = ?";
         try (PreparedStatement statement = connection.prepareStatement(query)) {
             statement.setInt(1, nuevasIntervenciones);
             statement.setString(2, alumno);
             statement.executeUpdate();
+        } catch (SQLException sq2) {
+            sq2.printStackTrace();
         }
     }
-    private static void mostrarInformacionAlumno(Connection connection, String alumnoSeleccionado) throws SQLException {
+    private static void mostrarInformacionAlumno(Connection connection, String alumnoSeleccionado){
         String query = "SELECT * FROM alumnos WHERE nombre = ?";
         try (PreparedStatement statement = connection.prepareStatement(query)) {
             statement.setString(1, alumnoSeleccionado);
@@ -124,6 +125,8 @@ public class RandomAlumnoUpdater {
                 System.out.println("Intervenciones: " + intervenciones);
                 System.out.println("Fecha de intervencion: " + fechaIntervencion);
             }
+        } catch (SQLException sq) {
+            sq.printStackTrace();
         }
     }
 }

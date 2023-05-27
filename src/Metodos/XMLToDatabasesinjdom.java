@@ -59,7 +59,6 @@ public class XMLToDatabasesinjdom {
                     }
                 }
 
-                // Cerrar recursos
                 insertStatement.close();
                 connection.close();
 

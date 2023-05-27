@@ -74,7 +74,6 @@ public class DatabaseToXML {
 
                 System.out.println("Archivo XML creado correctamente.");
 
-                // Cerrar recursos
                 rs.close();
                 stmt.close();
                 conn.close();

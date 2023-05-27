@@ -39,8 +39,6 @@ public class CrearTablaDatabase {
         } else if (scannertexto.equalsIgnoreCase("cancelar")) {
             System.out.println("La base de datos no ha sido modificada");
         }
-
     }
-
 }
 
