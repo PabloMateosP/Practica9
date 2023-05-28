@@ -4,3 +4,27 @@ PARA EL USO DE LA BASE DE DATOS SE DEBE DE INICIAR LA CONEXIÓN CON LA BASE DE D
 
 --- TAREAS ---
 HAY QUE VOLVER A AÑADIR UN NUEVO ARCHIVO CSV CORRECTO CON LOS DATOS QUE NOS HABÍA DADO FRAN
+
+La aplicación dispone de un eficiente menú con un total de 15 opciones diferentes en función a la acción que usted desee realizar.
+
+El amplio abanico de opciones de las que dispone son las siguientes:
+
+-- 1. CREACIÓN BASE DE DATOS --
+
+-- 2. BORRAR BASE DE DATOS --
+
+-- 3. CREAR TABLA --
+
+-- 4. BORRAR TABLA --
+
+-- 5. IMPORTAR XML A BASE DE DATOS --
+
+-- 6. IMPORTAR CSV A BASE DE DATOS --
+
+-- 7. EXPORTAR BASE DE DATOS A XML --
+
+-- 8. EXPORTAR BASE DE DATOS A CSV --
+
+-- 9. SELECCIONAR UN ALUMNO ALEATORIO DE LA BASE DE DATOS --
+
+-- 10. PO
