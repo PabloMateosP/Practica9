@@ -10,16 +10,26 @@ La aplicación dispone de un eficiente menú con un total de 15 opciones diferen
 El amplio abanico de opciones de las que dispone son las siguientes:
 
 -- 1. CREACIÓN BASE DE DATOS --
+Esta opción nos brinda la posibilidad de crear una base de datos mediante dos sencillos pasos, solo introduce tu ruta y dale un 
+nombre y tendrás tu base de datos creada.
 
 -- 2. BORRAR BASE DE DATOS --
+Al contrario de la opción anterior, esta nos ofrece la posibilidad de borrar cualquier base de datos si no estamos satisfechos con ella.
 
 -- 3. CREAR TABLA --
+Toda base de datos tiene sus tablas, crea las de la tuya mediante esta opción y tendrás tus tablas en un abrir y cerrar de ojos.
 
 -- 4. BORRAR TABLA --
+¿No estás satisfecho con tus tablas? No te preocupes, pues gracias a esta opción podrás borrar todas las tablas que quieras hasta dejar 
+la base de datos como nueva.
 
 -- 5. IMPORTAR XML A BASE DE DATOS --
+¿Tienes tus datos en un archivo XML preparados para ser insertados en una base de datos? Pues con este eficiente método podrás introducir
+tu información en la base de datos con tan solo introducir la ruta del archivo y la de tu base de datos.
 
 -- 6. IMPORTAR CSV A BASE DE DATOS --
+¿Tienes tus datos en un archivo CSV preparados para ser insertados en una base de datos? Pues con este eficiente método podrás introducir
+tu información en la base de datos con tan solo introducir la ruta del archivo y la de tu base de datos.
 
 -- 7. EXPORTAR BASE DE DATOS A XML --
 
@@ -27,4 +37,14 @@ El amplio abanico de opciones de las que dispone son las siguientes:
 
 -- 9. SELECCIONAR UN ALUMNO ALEATORIO DE LA BASE DE DATOS --
 
--- 10. PO
+-- 10. PONER A CERO TODAS LAS INTERVENCIONES --
+
+-- 11. INTRODUCIR NUEVO REGISTRO -- 
+
+-- 12. ELIMINAR REGISTRO EXISTENTE --
+
+-- 13. MODIFICAR REGISTRO EXISTENTE --
+
+-- 14. CONSULTAR ALUMNOS CON MENOS INTERVENCIONES QUE LA MEDIA --
+
+-- 15. SALIR DEL PROGRAMA
