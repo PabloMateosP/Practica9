@@ -57,7 +57,7 @@ public class InterfazMenu {
 
         //FRAME PARA BORRAR LA BASE DE DATOS
         Frame frameBorrarBase = new Frame("Borrar Base");
-        frameBorrarBase.setSize(200, 200);
+        frameBorrarBase.setSize(300, 300);
         frameBorrarBase.setLayout(new GridLayout(3,3,10,10));
         Label labeltextoRutaBase = new Label("Escriba la ruta de su Base:");
         labeltextoRutaBase.setBounds(10, 20, 160, 100);
@@ -125,8 +125,8 @@ public class InterfazMenu {
 
         //FRAME PARA CREAR LA BASE DE DATOS
         Frame frameCreaBase = new Frame("Crear Base");
-        frameCreaBase.setSize(200, 200);
-        frameCreaBase.setLayout(new GridLayout(3,3,10,10));
+        frameCreaBase.setSize(300, 300);
+        frameCreaBase.setLayout(new GridLayout(3,1,10,10));
         Label labeltexto2RutaBase = new Label("Escriba la ruta de su base:");
         labeltexto2RutaBase.setBounds(10, 20, 160, 100);
         labeltexto2RutaBase.setForeground(Color.BLACK);
